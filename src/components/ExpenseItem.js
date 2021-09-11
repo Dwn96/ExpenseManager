@@ -12,7 +12,7 @@ export default function ExpenseItem({expenses}) {
 
             <div className="expense-item">
 
-           <ExpenseDate expense = {expense}></ExpenseDate>
+           <ExpenseDate date = {expense.date}></ExpenseDate>
 
             <div className = "expense-item__description">
 
