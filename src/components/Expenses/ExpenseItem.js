@@ -1,14 +1,16 @@
 import React from 'react'
 import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate'
+import ExpensesFilter from './ExpensesFilter'
 
 export default function ExpenseItem({expenses}) {
  
 
     return (
-        expenses.map((expense)=>(
+        <div>
+        <ExpensesFilter></ExpensesFilter>
 
-           
+         {expenses.map((expense)=>(           
 
             <div className="expense-item">
 
@@ -22,8 +24,8 @@ export default function ExpenseItem({expenses}) {
             </div>
 
         </div>
-
-        ))
-       
+   
+        ))}
+       </div>
     )
 }
